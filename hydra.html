@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticker Scorrevole</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #000; /* Colore di sfondo */
+            color: #fff; /* Colore del testo */
+            font-family: Arial, sans-serif; /* Font del testo */
+            overflow: hidden; /* Nasconde le barre di scorrimento */
+        }
+        .ticker-container {
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll 10s linear infinite; /* Durata e ripetizione */
+        }
+        @keyframes scroll {
+            from {
+                transform: translateX(100%); /* Inizio a destra */
+            }
+            to {
+                transform: translateX(-100%); /* Fine a sinistra */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticker-container">
+        [Hydra - We are back - Coming Soon] Manca poco all'apertura! Per restare aggiornato, entra nel nostro Discord!
+    </div>
+</body>
+</html>
