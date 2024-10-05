@@ -15,7 +15,7 @@
         .ticker-container {
             position: absolute;
             white-space: nowrap;
-            animation: scroll 10s linear infinite; /* Durata e ripetizione */
+            animation: scroll 20s linear infinite; /* Aumentato a 20s */
             font-size: 24px; /* Dimensione del font */
             right: 0; /* Posizione a destra */
         }
@@ -24,7 +24,7 @@
                 transform: translateX(100%); /* Inizio a destra */
             }
             to {
-                transform: translateX(-100%); /* Fine a sinistra */
+                transform: translateX(-200%); /* Fine a sinistra, permette al testo di uscire completamente */
             }
         }
     </style>
